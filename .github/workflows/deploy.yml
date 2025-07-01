@@ -1,0 +1,22 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master # Kích hoạt workflow khi có push lên nhánh master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./ # Thư mục chứa các tệp HTML, CSS, JS của bạn
+        # Nếu trang web của bạn nằm trong một thư mục con, ví dụ 'dist', hãy thay đổi thành 'publish_dir: ./dist'
+        # Trong trường hợp này, các tệp của bạn nằm ở thư mục gốc, nên để là './'
