@@ -1,16 +1,10 @@
- _   _ _   _ ___ _____ ___ ___  _   _ 
-| | | | |_| |_ _|_   _|_ _/ __|| | | |
-| |_| |  _  || |  | |  | |\__ \| |_| |
- \___/|_| |_|___| |_| |___|___/ \___/ 
-```
-
-<h1 align="center">
-  <img src="https://raw.githubusercontent.com/MagePsycho/github-profile-readme-generator/main/src/assets/images/header.svg" alt="CTDOPDN Header" width="600"/>
-</h1>
+# CTDOPDN
 
 <p align="center">
-  Chào mừng đến với không gian cá nhân của <span style="color: #00FFFF;">Do Nguyen</span> - một sinh viên năm nhất đầy nhiệt huyết trong hành trình khám phá thế giới lập trình!
+  <img src="https://raw.githubusercontent.com/MagePsycho/github-profile-readme-generator/main/src/assets/images/header.svg" alt="CTDOPDN Header" width="600"/>
 </p>
+
+Chào mừng đến với không gian cá nhân của **Do Nguyen** - một sinh viên năm nhất đầy nhiệt huyết trong hành trình khám phá thế giới lập trình!
 
 ---
 
@@ -55,5 +49,3 @@ Nếu bạn có bất kỳ câu hỏi nào, hoặc muốn chia sẻ ý tưởng,
 <p align="right">
   "The future is not something we enter. The future is something we create." - Leonard I. Sweet
 </p>
-
-```
