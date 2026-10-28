@@ -1,51 +1,48 @@
-# CTDOPDN
+# 🌐 CTDOPDN — Official Portfolio Website
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/MagePsycho/github-profile-readme-generator/main/src/assets/images/header.svg" alt="CTDOPDN Header" width="600"/>
-</p>
+<div align="center">
+  <a href="https://tipc1110.github.io/ctdopdn/">
+    <img src="https://img.shields.io/badge/Live%20Demo-tipc1110.github.io%2Fctdopdn-0070F3?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Live Demo" />
+  </a>
+  <a href="https://github.com/TIPC1110">
+    <img src="https://img.shields.io/badge/GitHub-TIPC1110-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+</div>
 
-Chào mừng đến với không gian cá nhân của **Do Nguyen** - một sinh viên năm nhất đầy nhiệt huyết trong hành trình khám phá thế giới lập trình!
+<br/>
 
----
+Trang web portfolio cá nhân chính thức của **Do Nguyen (TIPC1110)** — Full Stack Developer & Systems Builder, Founder & Core Developer tại **ctdoteam**. 
 
-### 🌐 Trang Web Cá Nhân
-
-Đây là **GitHub Page** giới thiệu về tôi, nơi bạn có thể tìm thấy:
-
--   **Giới thiệu:** Về một sinh viên Kỹ thuật Phần mềm năm nhất, với niềm đam mê công nghệ và khát khao học hỏi.
--   **Kỹ năng:** Những kỹ năng cơ bản đang được trau dồi và phát triển.
--   **Dự án:** Các dự án cá nhân và học tập đang thực hiện, thể hiện quá trình học tập và ứng dụng kiến thức.
--   **Liên hệ:** Thông tin liên hệ để kết nối và trao đổi.
+Được thiết kế theo phong cách giao diện hiện đại **Obsidian Dark & Ambient Glassmorphism**, tối ưu hiển thị trên mọi thiết bị và tích hợp đầy đủ thông tin năng lực, chứng chỉ chuyên nghiệp và dự án thực tế.
 
 ---
 
-### 🚀 Liên Kết Nhanh
+## 🌟 Tính Năng & Điểm Nổi Bật
 
--   **Xem Trang Web:** [CTDOPDN GitHub Page](https://tipc1110.github.io/ctdopdn/)
--   **Mã Nguồn:** [Kho Lưu Trữ GitHub](https://github.com/TIPC1110/ctdopdn)
-
----
-
-### 💻 Công Nghệ Sử Dụng (Đang học và thực hành)
-
-<p align="left">
-  <img src="https://img.shields.io/badge/-HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
-  <img src="https://img.shields.io/badge/-CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
-  <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/-C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++" />
-  <img src="https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-</p>
+- 🎨 **Giao Diện Sang Trọng & Hiện Đại**: Gam màu Obsidian Dark kết hợp hiệu ứng đèn neon ambient, glassmorphism blur và typography chuẩn quốc tế (`Plus Jakarta Sans` & `JetBrains Mono`).
+- ⚡ **Tương Tác Mượt Mà**: Smooth scroll navigation, scroll spy nhận diện vị trí danh mục, scroll-to-top button và hiệu ứng scroll reveal cho từng card nội dung.
+- 📜 **Hồ Sơ Chứng Chỉ Chuyên Nghiệp**: Tổng hợp đầy đủ các chứng chỉ Coursera (Kỹ thuật phần mềm UML/Testing/Design, Web Design for Everybody Capstone), Amazon Generative AI, DeepLearning.AI và FPT Talent Assessment.
+- 🚀 **Showcase Dự Án Thực Chiến**: Trưng bày chi tiết các dự án trọng tâm:
+  - 🚌 **CTDOBus (`ctdomap`)**: Bản đồ & điều hành xe buýt Hà Nội trực tiếp qua SSE & giải mã AES-256-CBC.
+  - 📸 **ctdoshot**: Tiện ích macOS menu-bar chụp màn hình native viết bằng Swift 5.9.
+  - 🧠 **LUCA OS**: AI Agentic Brain đa mô hình & Second Brain.
+  - ☁️ **ctdocloud**: Desktop app quản lý cloud storage tích hợp Rclone (Rust).
+  - ⚡ **CTDOSHub**: Nền tảng backend API với Hono & Supabase.
+- 📬 **Form Liên Hệ AJAX Tức Thì**: Tích hợp Formspree API, xử lý bất đồng bộ mượt mà kèm thông báo phản hồi ngay trên giao diện (không dùng popup alert phiền toái).
+- 📱 **Responsive 100%**: Tối ưu hiển thị tuyệt đẹp trên cả Desktop, Tablet và Mobile.
 
 ---
 
-### ✨ Một Vài Dòng Từ Tôi
+## 🛠️ Công Nghệ Sử Dụng
 
-Chào mừng bạn đến với không gian số của tôi! Tôi là Do Nguyen, một sinh viên năm nhất ngành Kỹ thuật Phần mềm với niềm đam mê cháy bỏng với công nghệ. Trang web này là một phần nhỏ trong hành trình học tập và phát triển của tôi. Tôi luôn tìm kiếm cơ hội để học hỏi, kết nối và hợp tác trong lĩnh vực công nghệ.
-
-Nếu bạn có bất kỳ câu hỏi nào, hoặc muốn chia sẻ ý tưởng, đừng ngần ngại liên hệ nhé!
+- **Frontend Core:** HTML5, Modern CSS3 (CSS Variables, Flexbox, CSS Grid, Glassmorphism, Keyframe Animations)
+- **Scripting:** Pure Vanilla JavaScript (ES6+, Fetch API, Intersection Observer & Scroll Event Listeners)
+- **Fonts & Icons:** Google Fonts (`Plus Jakarta Sans`, `JetBrains Mono`), Font Awesome 6.5
+- **Form Handling:** Formspree API integration
+- **Deployment:** GitHub Pages & GitHub Actions CI/CD
 
 ---
 
-<p align="right">
-  "The future is not something we enter. The future is something we create." - Leonard I. Sweet
-</p>
+## 🚀 Xem Trực Tiếp
+
+Truy cập website tại: **[https://tipc1110.github.io/ctdopdn/](https://tipc1110.github.io/ctdopdn/)**

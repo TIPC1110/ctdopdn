@@ -3,82 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CTDOPDN - Profile của tôi</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Do Nguyen (TIPC1110) — Full Stack Developer & Systems Builder</title>
+    <meta name="description" content="Portfolio của Do Nguyen (TIPC1110) - Full Stack Developer, Founder @ ctdoteam. Chuyên xây dựng các ứng dụng Web hiệu năng cao, native Desktop (macOS Swift, Rust), Real-time Systems và AI Agent workflows.">
+    <meta name="keywords" content="Do Nguyen, TIPC1110, ctdoteam, CTDOBus, ctdoshot, Full Stack Developer, Software Engineer Vietnam">
+    <meta property="og:title" content="Do Nguyen — Full Stack Developer & Systems Builder">
+    <meta property="og:description" content="Khám phá các sản phẩm công nghệ, hệ thống điều hành xe buýt thời gian thực, native macOS utilities và AI Agents từ Do Nguyen (ctdoteam).">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tipc1110.github.io/ctdopdn/">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <!-- Background Ambient Glows -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
     <div class="container">
-        <!-- Header -->
-        <header>
-            <div class="logo">CTDOPDN</div>
-            <nav>
+        <!-- Navigation -->
+        <header id="navbar">
+            <a href="#home" class="logo">
+                <span class="logo-accent">&lt;</span>CTDO<span class="logo-accent">/&gt;</span>
+                <span class="logo-sub">PDN</span>
+            </a>
+            
+            <button class="mobile-toggle" id="menuToggle" aria-label="Mở menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="navMenu">
                 <ul>
-                    <li><a href="#home">Trang chủ</a></li>
-                    <li><a href="#about">Giới thiệu</a></li>
-                    <li><a href="#skills">Kỹ năng</a></li>
-                    <li><a href="#projects">Dự án</a></li>
-                    <li><a href="#contact">Liên hệ</a></li>
+                    <li><a href="#home" class="nav-link active">Trang chủ</a></li>
+                    <li><a href="#about" class="nav-link">Về tôi</a></li>
+                    <li><a href="#skills" class="nav-link">Kỹ năng</a></li>
+                    <li><a href="#certifications" class="nav-link">Chứng chỉ</a></li>
+                    <li><a href="#projects" class="nav-link">Dự án</a></li>
+                    <li><a href="#ecosystem" class="nav-link">Hệ sinh thái</a></li>
+                    <li><a href="#contact" class="nav-link">Liên hệ</a></li>
                 </ul>
             </nav>
         </header>
 
         <!-- Hero Section -->
         <section class="hero" id="home">
-            <div class="profile-content">
-                <h1>Xin chào, tôi là <span class="highlight">Do Nguyen</span></h1>
-                <h2>Sinh viên năm nhất ngành Kỹ thuật Phần mềm</h2>
-                <p>Tôi là một sinh viên năm nhất ngành Kỹ thuật Phần mềm, với niềm đam mê khám phá thế giới công nghệ và sáng tạo những giải pháp mới. Tôi luôn nhiệt huyết trong việc học hỏi và phát triển bản thân từng ngày.</p>
-                <div>
-                    <a href="#contact" class="btn">Liên hệ ngay</a>
-                    <a href="#projects" class="btn btn-outline">Xem dự án</a>
+            <div class="hero-content">
+                <div class="badge-status">
+                    <span class="status-dot"></span>
+                    <span>Sẵn sàng cho các dự án đột phá & công nghệ mới</span>
                 </div>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/do.x.nguyen.2025/"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/TIPC1110"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-dribbble"></i></a>
+                
+                <h1 class="hero-title">
+                    Xin chào, mình là <br>
+                    <span class="gradient-text">Do Nguyen</span>
+                </h1>
+                
+                <h2 class="hero-subtitle">
+                    <span class="code-bracket">&lt;</span>
+                    Full Stack Developer & Systems Builder
+                    <span class="code-bracket">/&gt;</span>
+                </h2>
+                
+                <p class="hero-desc">
+                    Lập trình viên đam mê công nghệ tại Việt Nam, Founder & Core Developer tại <strong>ctdoteam</strong>. 
+                    Tập trung nghiên cứu và phát triển các hệ thống thời gian thực (Real-time Telemetry), 
+                    tiện ích native desktop (macOS Swift, Rust), web platforms tối ưu và ứng dụng AI Agent thông minh.
+                </p>
+                
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-layer-group"></i> Khám phá dự án
+                    </a>
+                    <a href="#certifications" class="btn btn-secondary">
+                        <i class="fas fa-award"></i> Xem chứng chỉ
+                    </a>
+                    <a href="https://github.com/TIPC1110" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" title="GitHub Profile">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+                
+                <div class="social-bar">
+                    <span class="social-label">Mạng xã hội:</span>
+                    <a href="https://github.com/TIPC1110" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/do.x.nguyen.2025/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="mailto:dothanhcong1110@outlook.com" class="social-btn" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
                 </div>
             </div>
-            <div class="profile-image">
-                <div class="profile-img-container">
-                    <img src="assets/images/image.png" alt="Do Nguyen">
+            
+            <div class="hero-visual">
+                <div class="avatar-wrapper">
+                    <div class="avatar-glow"></div>
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-inner">
+                        <img src="assets/images/image.png" alt="Do Nguyen - Full Stack Developer" class="avatar-img">
+                    </div>
+                    
+                    <div class="floating-chip chip-1">
+                        <i class="fas fa-bolt"></i>
+                        <span>Real-time SSE</span>
+                    </div>
+                    
+                    <div class="floating-chip chip-2">
+                        <i class="fab fa-swift"></i>
+                        <span>Swift macOS</span>
+                    </div>
+                    
+                    <div class="floating-chip chip-3">
+                        <i class="fas fa-robot"></i>
+                        <span>AI Agents</span>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- About Section -->
         <section class="section" id="about">
-            <h2 class="section-title reveal">Về Tôi</h2>
-            <div class="about-content">
-                <div class="about-text reveal">
-                    <h3>Thông tin cá nhân</h3>
-                    <p>Là một sinh viên năm nhất ngành Kỹ thuật Phần mềm, tôi đang trong giai đoạn đầu của hành trình khám phá và chinh phục thế giới công nghệ. Tôi đặc biệt quan tâm đến phát triển web và ứng dụng di động, luôn tìm tòi và học hỏi để xây dựng những sản phẩm có giá trị.</p>
-                    <p>Mặc dù mới bắt đầu, tôi đã tích cực tham gia các khóa học, tìm hiểu các công nghệ mới và thực hành qua các dự án nhỏ. Tôi tin rằng với sự kiên trì và niềm đam mê, tôi sẽ từng bước hoàn thiện kỹ năng và đạt được những thành công trong tương lai.</p>
+            <div class="section-header reveal">
+                <span class="section-tag">HÀNH TRÌNH & NĂNG LỰC</span>
+                <h2 class="section-title">Về Bản Thân</h2>
+                <div class="title-bar"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card reveal">
+                    <div class="card-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3>Kiến Trúc & Triết Lý Phát Triển</h3>
+                    <p>
+                        Từ năm 2021 đến nay, mình luôn theo đuổi mục tiêu xây dựng những sản phẩm có tính ứng dụng cao và hiệu năng tối đa. 
+                        Mình tin rằng chất lượng phần mềm nằm ở kiến trúc chuẩn mực, mã nguồn tinh gọn và phản ánh trung thực bài toán thực tế.
+                    </p>
+                    <p>
+                        Thay vì dựa vào dữ liệu giả lập (mock data), các dự án như <strong>CTDOBus</strong> kết nối trực tiếp telemetry xe buýt qua luồng giải mã bảo mật AES-256-CBC và Server-Sent Events, mang lại trải nghiệm chính xác đến từng giây.
+                    </p>
+                </div>
+
+                <div class="about-metrics reveal">
+                    <div class="metric-item">
+                        <div class="metric-number">60+</div>
+                        <div class="metric-label">Repositories Mã Nguồn Mở</div>
+                        <div class="metric-desc">Đa dạng từ Web, Desktop, CLI đến Mobile App</div>
+                    </div>
                     
-                    <div class="about-stats">
-                        <div class="stat-item reveal">
-                            <i class="fas fa-briefcase"></i>
-                            <h4>Đang học</h4>
-                            <p>Kinh nghiệm</p>
-                        </div>
-                        <div class="stat-item reveal">
-                            <i class="fas fa-project-diagram"></i>
-                            <h4>Đang thực hiện</h4>
-                            <p>Dự án</p>
-                        </div>
-                        <div class="stat-item reveal">
-                            <i class="fas fa-users"></i>
-                            <h4>Đang tích lũy</h4>
-                            <p>Kiến thức</p>
-                        </div>
-                        <div class="stat-item reveal">
-                            <i class="fas fa-award"></i>
-                            <h4>Đang phát triển</h4>
-                            <p>Kỹ năng</p>
-                        </div>
+                    <div class="metric-item">
+                        <div class="metric-number">4+</div>
+                        <div class="metric-label">Năm Thực Chiến</div>
+                        <div class="metric-desc">Liên tục học hỏi và phát triển từ 2021</div>
+                    </div>
+                    
+                    <div class="metric-item">
+                        <div class="metric-number">100%</div>
+                        <div class="metric-label">Dữ Liệu Thật (Zero-Mock)</div>
+                        <div class="metric-desc">Tích hợp API thực tế, giải mã luồng GPS</div>
+                    </div>
+                    
+                    <div class="metric-item">
+                        <div class="metric-number">Multi</div>
+                        <div class="metric-label">Đa Nền Tảng Công Nghệ</div>
+                        <div class="metric-desc">Web, macOS Swift, Rust Desktop & AI</div>
                     </div>
                 </div>
             </div>
@@ -86,84 +185,286 @@
 
         <!-- Skills Section -->
         <section class="section" id="skills">
-            <h2 class="section-title reveal">Kỹ Năng</h2>
-            <div class="skills-container">
-                <div class="skill-category reveal">
-                    <h3><i class="fas fa-laptop-code"></i> Kỹ năng kỹ thuật</h3>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>HTML & CSS cơ bản</span>
-                            <span>60%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 60%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>JavaScript cơ bản</span>
-                            <span>50%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 50%"></div>
+            <div class="section-header reveal">
+                <span class="section-tag">CÔNG NGHỆ CHỦ ĐẠO</span>
+                <h2 class="section-title">Kỹ Năng & Hệ Sinh Thái Kỹ Thuật</h2>
+                <div class="title-bar"></div>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Category 1 -->
+                <div class="skill-group reveal">
+                    <div class="group-header">
+                        <div class="group-icon"><i class="fas fa-terminal"></i></div>
+                        <div>
+                            <h3>Ngôn Ngữ Lập Trình</h3>
+                            <p>Các ngôn ngữ sử dụng thường xuyên trong sản phẩm thực tế</p>
                         </div>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>C/C++</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 70%"></div>
+                    <div class="tags-cloud">
+                        <span class="tech-pill"><i class="fab fa-js text-yellow"></i> TypeScript / JS</span>
+                        <span class="tech-pill"><i class="fab fa-python text-blue"></i> Python</span>
+                        <span class="tech-pill"><i class="fab fa-swift text-orange"></i> Swift (macOS)</span>
+                        <span class="tech-pill"><i class="fab fa-rust text-brown"></i> Rust</span>
+                        <span class="tech-pill"><i class="fab fa-php text-purple"></i> PHP</span>
+                        <span class="tech-pill"><i class="fas fa-code text-cyan"></i> C / C++</span>
+                        <span class="tech-pill"><i class="fab fa-html5 text-red"></i> HTML5 / CSS3</span>
+                    </div>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="skill-group reveal">
+                    <div class="group-header">
+                        <div class="group-icon"><i class="fas fa-laptop-code"></i></div>
+                        <div>
+                            <h3>Frontend & Giao Diện Hiện Đại</h3>
+                            <p>Xây dựng trải nghiệm mượt mà, responsive và thẩm mỹ cao</p>
                         </div>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Python cơ bản</span>
-                            <span>40%</span>
+                    <div class="tags-cloud">
+                        <span class="tech-pill"><i class="fab fa-react text-cyan"></i> React 18</span>
+                        <span class="tech-pill"><i class="fas fa-bolt text-white"></i> Next.js</span>
+                        <span class="tech-pill"><i class="fas fa-rocket text-purple"></i> Vite 5</span>
+                        <span class="tech-pill"><i class="fab fa-vuejs text-green"></i> Vue.js</span>
+                        <span class="tech-pill"><i class="fas fa-fire text-orange"></i> Svelte</span>
+                        <span class="tech-pill"><i class="fas fa-star text-fuchsia"></i> Astro</span>
+                        <span class="tech-pill"><i class="fab fa-css3-alt text-blue"></i> Tailwind CSS</span>
+                        <span class="tech-pill"><i class="fas fa-map-marked-alt text-emerald"></i> Leaflet & Maps</span>
+                    </div>
+                </div>
+
+                <!-- Category 3 -->
+                <div class="skill-group reveal">
+                    <div class="group-header">
+                        <div class="group-icon"><i class="fas fa-server"></i></div>
+                        <div>
+                            <h3>Backend, APIs & Real-time</h3>
+                            <p>Hệ thống máy chủ chịu tải, phát luồng SSE & bảo mật</p>
                         </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 40%"></div>
+                    </div>
+                    <div class="tags-cloud">
+                        <span class="tech-pill"><i class="fab fa-node-js text-green"></i> Node.js & Express</span>
+                        <span class="tech-pill"><i class="fas fa-bolt text-orange"></i> Hono Framework</span>
+                        <span class="tech-pill"><i class="fas fa-wind text-teal"></i> FastAPI (Python)</span>
+                        <span class="tech-pill"><i class="fas fa-satellite-dish text-cyan"></i> SSE (Server-Sent Events)</span>
+                        <span class="tech-pill"><i class="fas fa-shield-halved text-amber"></i> AES-256-CBC Decryption</span>
+                        <span class="tech-pill"><i class="fas fa-route text-indigo"></i> BFS Route Finding Algorithms</span>
+                        <span class="tech-pill"><i class="fas fa-network-wired text-blue"></i> RESTful APIs & WebSockets</span>
+                    </div>
+                </div>
+
+                <!-- Category 4 -->
+                <div class="skill-group reveal">
+                    <div class="group-header">
+                        <div class="group-icon"><i class="fas fa-cloud"></i></div>
+                        <div>
+                            <h3>Cơ Sở Dữ Liệu & Hạ Tầng Cloud</h3>
+                            <p>Quản lý dữ liệu, đám mây và tối ưu triển khai</p>
+                        </div>
+                    </div>
+                    <div class="tags-cloud">
+                        <span class="tech-pill"><i class="fas fa-database text-emerald"></i> Supabase</span>
+                        <span class="tech-pill"><i class="fas fa-server text-blue"></i> PostgreSQL</span>
+                        <span class="tech-pill"><i class="fas fa-leaf text-green"></i> MongoDB</span>
+                        <span class="tech-pill"><i class="fas fa-bolt text-red"></i> Redis</span>
+                        <span class="tech-pill"><i class="fab fa-docker text-blue"></i> Docker</span>
+                        <span class="tech-pill"><i class="fab fa-cloudflare text-orange"></i> Cloudflare</span>
+                        <span class="tech-pill"><i class="fas fa-triangle-circle-square text-white"></i> Vercel</span>
+                        <span class="tech-pill"><i class="fas fa-cloud-arrow-up text-cyan"></i> Rclone Multi-Cloud</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="section" id="certifications">
+            <div class="section-header reveal">
+                <span class="section-tag">CHỨNG CHỈ & ĐÀO TẠO CHUYÊN NGHIỆP</span>
+                <h2 class="section-title">Chứng Chỉ & Năng Lực Học Thuật</h2>
+                <div class="title-bar"></div>
+            </div>
+
+            <div class="certifications-container">
+                <!-- Category A: Software Engineering & System Design -->
+                <div class="cert-category reveal">
+                    <div class="cert-cat-header">
+                        <div class="cert-cat-icon"><i class="fas fa-cubes"></i></div>
+                        <div>
+                            <h3>Kỹ Thuật Phần Mềm & Thiết Kế Hệ Thống (Coursera)</h3>
+                            <span class="cert-cat-sub">Software Engineering & System Architecture</span>
+                        </div>
+                    </div>
+                    <div class="cert-list">
+                        <div class="cert-card">
+                            <div class="cert-badge"><i class="fas fa-certificate"></i> Coursera</div>
+                            <div class="cert-content">
+                                <h4>Software Engineering: Modeling Software Systems using UML</h4>
+                                <p class="cert-date"><i class="far fa-calendar-check"></i> Hoàn thành: 10/04/2026</p>
+                            </div>
+                        </div>
+
+                        <div class="cert-card">
+                            <div class="cert-badge"><i class="fas fa-certificate"></i> Coursera</div>
+                            <div class="cert-content">
+                                <h4>Software Engineering: Implementation and Testing</h4>
+                                <p class="cert-date"><i class="far fa-calendar-check"></i> Hoàn thành: 10/04/2026</p>
+                            </div>
+                        </div>
+
+                        <div class="cert-card">
+                            <div class="cert-badge"><i class="fas fa-certificate"></i> Coursera</div>
+                            <div class="cert-content">
+                                <h4>Software Engineering: Software Design and Project Management</h4>
+                                <p class="cert-date"><i class="far fa-calendar-check"></i> Hoàn thành: 10/04/2026</p>
+                            </div>
+                        </div>
+
+                        <div class="cert-card">
+                            <div class="cert-badge"><i class="fas fa-certificate"></i> Coursera</div>
+                            <div class="cert-content">
+                                <h4>Introduction to User Experience Principles and Processes</h4>
+                                <p class="cert-date"><i class="far fa-calendar-check"></i> Hoàn thành: 07/10/2026</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="skill-category reveal">
-                    <h3><i class="fas fa-book-reader"></i> Kỹ năng học tập & tư duy</h3>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Giải quyết vấn đề</span>
-                            <span>65%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 65%"></div>
+
+                <!-- Category B: AI & Emerging Tech -->
+                <div class="cert-category reveal">
+                    <div class="cert-cat-header">
+                        <div class="cert-cat-icon"><i class="fas fa-robot"></i></div>
+                        <div>
+                            <h3>Trí Tuệ Nhân Tạo & Generative AI</h3>
+                            <span class="cert-cat-sub">Amazon & DeepLearning.AI</span>
                         </div>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Tư duy logic</span>
-                            <span>70%</span>
+                    <div class="cert-list">
+                        <div class="cert-card highlight-cert">
+                            <div class="cert-badge amazon"><i class="fab fa-amazon"></i> Amazon Web Services</div>
+                            <div class="cert-content">
+                                <h4>Generative AI in Software Development</h4>
+                                <p class="cert-date"><i class="far fa-calendar-check"></i> Hoàn thành: 17/01/2026</p>
+                            </div>
                         </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 70%"></div>
+
+                        <div class="cert-card highlight-cert">
+                            <div class="cert-badge deeplearning"><i class="fas fa-brain"></i> DeepLearning.AI</div>
+                            <div class="cert-content">
+                                <h4>AI For Everyone</h4>
+                                <p class="cert-date"><i class="far fa-calendar-check"></i> Hoàn thành: 04/08/2025</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Làm việc nhóm</span>
-                            <span>75%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 75%"></div>
+                </div>
+
+                <!-- Category C: Web Design for Everybody Specialization -->
+                <div class="cert-category reveal">
+                    <div class="cert-cat-header">
+                        <div class="cert-cat-icon"><i class="fas fa-layer-group"></i></div>
+                        <div>
+                            <h3>Chuyên Ngành Web Design for Everybody (Coursera)</h3>
+                            <span class="cert-cat-sub">University of Michigan Specialization Track</span>
                         </div>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Tìm kiếm thông tin</span>
-                            <span>80%</span>
+                    <div class="cert-list">
+                        <div class="cert-card capstone-cert">
+                            <div class="cert-badge gold"><i class="fas fa-trophy"></i> Capstone</div>
+                            <div class="cert-content">
+                                <h4>Web Design for Everybody Capstone</h4>
+                                <p class="cert-date"><i class="far fa-calendar-check"></i> Hoàn thành: 04/12/2025</p>
+                            </div>
                         </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%"></div>
+
+                        <div class="cert-card">
+                            <div class="cert-badge"><i class="fas fa-certificate"></i> Coursera</div>
+                            <div class="cert-content">
+                                <h4>Advanced Styling with Responsive Design</h4>
+                                <p class="cert-date"><i class="far fa-calendar-check"></i> Hoàn thành: 04/12/2025</p>
+                            </div>
+                        </div>
+
+                        <div class="cert-card">
+                            <div class="cert-badge"><i class="fas fa-certificate"></i> Coursera</div>
+                            <div class="cert-content">
+                                <h4>Interactivity with JavaScript</h4>
+                                <p class="cert-date"><i class="far fa-calendar-check"></i> Hoàn thành: 04/12/2025</p>
+                            </div>
+                        </div>
+
+                        <div class="cert-card">
+                            <div class="cert-badge"><i class="fas fa-certificate"></i> Coursera</div>
+                            <div class="cert-content">
+                                <h4>Introduction to CSS3</h4>
+                                <p class="cert-date"><i class="far fa-calendar-check"></i> Hoàn thành: 03/12/2025</p>
+                            </div>
+                        </div>
+
+                        <div class="cert-card">
+                            <div class="cert-badge"><i class="fas fa-certificate"></i> Coursera</div>
+                            <div class="cert-content">
+                                <h4>Introduction to HTML5</h4>
+                                <p class="cert-date"><i class="far fa-calendar-check"></i> Hoàn thành: 25/09/2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category D: University Success & Assessments -->
+                <div class="cert-category reveal">
+                    <div class="cert-cat-header">
+                        <div class="cert-cat-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div>
+                            <h3>Năng Lực Học Thuật & Đánh Giá Năng Lực</h3>
+                            <span class="cert-cat-sub">Academic Skills & Talent Assessment</span>
+                        </div>
+                    </div>
+                    <div class="cert-list">
+                        <div class="cert-card highlight-cert">
+                            <div class="cert-badge fpt"><i class="fas fa-award"></i> FPT Education</div>
+                            <div class="cert-content">
+                                <h4>FPT Talent Assessment Completion</h4>
+                                <p class="cert-date"><i class="far fa-calendar-check"></i> Hoàn thành: 25/10/2026</p>
+                            </div>
+                        </div>
+
+                        <div class="cert-card capstone-cert">
+                            <div class="cert-badge gold"><i class="fas fa-trophy"></i> Capstone</div>
+                            <div class="cert-content">
+                                <h4>Academic Skills for University Success: Capstone</h4>
+                                <p class="cert-date"><i class="far fa-calendar-check"></i> Hoàn thành: 25/04/2025</p>
+                            </div>
+                        </div>
+
+                        <div class="cert-card">
+                            <div class="cert-badge"><i class="fas fa-certificate"></i> Coursera</div>
+                            <div class="cert-content">
+                                <h4>Communication Skills for University Success</h4>
+                                <p class="cert-date"><i class="far fa-calendar-check"></i> Hoàn thành: 17/04/2025</p>
+                            </div>
+                        </div>
+
+                        <div class="cert-card">
+                            <div class="cert-badge"><i class="fas fa-certificate"></i> Coursera</div>
+                            <div class="cert-content">
+                                <h4>Critical Thinking Skills for University Success</h4>
+                                <p class="cert-date"><i class="far fa-calendar-check"></i> Hoàn thành: 09/04/2025</p>
+                            </div>
+                        </div>
+
+                        <div class="cert-card">
+                            <div class="cert-badge"><i class="fas fa-certificate"></i> Coursera</div>
+                            <div class="cert-content">
+                                <h4>Problem-Solving Skills for University Success</h4>
+                                <p class="cert-date"><i class="far fa-calendar-check"></i> Hoàn thành: 04/04/2025</p>
+                            </div>
+                        </div>
+
+                        <div class="cert-card">
+                            <div class="cert-badge"><i class="fas fa-certificate"></i> Coursera</div>
+                            <div class="cert-content">
+                                <h4>Information & Digital Literacy for University Success</h4>
+                                <p class="cert-date"><i class="far fa-calendar-check"></i> Hoàn thành: 29/03/2025</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -172,53 +473,187 @@
 
         <!-- Projects Section -->
         <section class="section" id="projects">
-            <h2 class="section-title reveal">Dự Án Nổi Bật</h2>
+            <div class="section-header reveal">
+                <span class="section-tag">SẢN PHẨM THỰC TẾ</span>
+                <h2 class="section-title">Dự Án Nổi Bật</h2>
+                <div class="title-bar"></div>
+            </div>
+
             <div class="projects-grid">
-                <div class="project-card reveal">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Dự án 1">
+                <!-- Project 1: CTDOBus -->
+                <div class="project-card featured reveal">
+                    <div class="card-glass-header">
+                        <div class="project-badge"><i class="fas fa-bus"></i> Live GPS Transit System</div>
+                        <div class="project-stars"><i class="fab fa-github"></i> ctdomap</div>
                     </div>
-                    <div class="project-content">
-                        <h3>Hệ thống quản lý doanh nghiệp</h3>
-                        <p>Phát triển hệ thống quản lý toàn diện cho doanh nghiệp với các module quản lý nhân sự, tài chính và dự án.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">React</span>
-                            <span class="project-tag">Node.js</span>
-                            <span class="project-tag">MongoDB</span>
+                    <div class="project-body">
+                        <h3>CTDOBus — Bản Đồ & Điều Hành Xe Buýt Hà Nội Thời Gian Thực</h3>
+                        <p>
+                            Hệ thống web tra cứu lộ trình và theo dõi xe buýt Hà Nội trực tiếp: kết nối giải mã bảo mật <strong>AES-256-CBC</strong> với dữ liệu telemetry VinBus Core API, đẩy vị trí GPS qua luồng <strong>Server-Sent Events (SSE)</strong> mỗi 4 giây và giải thuật BFS tìm đường chuyển tiếp thông minh.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span>React 18</span>
+                            <span>Vite 5</span>
+                            <span>Node.js</span>
+                            <span>Leaflet Map</span>
+                            <span>SSE Stream</span>
+                            <span>AES Decrypt</span>
                         </div>
-                        <a href="#" class="btn">Xem chi tiết</a>
+                        <div class="project-links">
+                            <a href="https://github.com/TIPC1110/ctdomap" target="_blank" rel="noopener noreferrer" class="proj-btn primary">
+                                <i class="fab fa-github"></i> Xem Mã Nguồn
+                            </a>
+                        </div>
                     </div>
                 </div>
-                
+
+                <!-- Project 2: ctdoshot -->
                 <div class="project-card reveal">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Dự án 2">
+                    <div class="card-glass-header">
+                        <div class="project-badge"><i class="fab fa-apple"></i> Native macOS Utility</div>
+                        <div class="project-stars"><i class="fab fa-github"></i> ctdoshot</div>
                     </div>
-                    <div class="project-content">
-                        <h3>Ứng dụng di động E-commerce</h3>
-                        <p>Thiết kế và phát triển ứng dụng mua sắm di động với trải nghiệm người dùng tối ưu và thanh toán dễ dàng.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">React Native</span>
-                            <span class="project-tag">Firebase</span>
-                            <span class="project-tag">Redux</span>
+                    <div class="project-body">
+                        <h3>ctdoshot — Công Cụ Chụp Màn Hình Menu-Bar macOS</h3>
+                        <p>
+                            Ứng dụng thanh menu native hiệu năng cao cho macOS: hỗ trợ chụp ảnh vùng chọn, ghi chú trực quan, OCR trích xuất văn bản từ hình ảnh, chụp cuộn màn hình (scrolling capture), copy nhanh vào clipboard và lưu trữ.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span>Swift 5.9</span>
+                            <span>AppKit</span>
+                            <span>macOS 13+</span>
+                            <span>OCR Engine</span>
                         </div>
-                        <a href="#" class="btn">Xem chi tiết</a>
+                        <div class="project-links">
+                            <a href="https://github.com/TIPC1110/ctdoshot" target="_blank" rel="noopener noreferrer" class="proj-btn">
+                                <i class="fab fa-github"></i> Xem Mã Nguồn
+                            </a>
+                        </div>
                     </div>
                 </div>
-                
+
+                <!-- Project 3: LUCA OS -->
                 <div class="project-card reveal">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Dự án 3">
+                    <div class="card-glass-header">
+                        <div class="project-badge"><i class="fas fa-brain"></i> AI Agent Platform</div>
+                        <div class="project-stars"><i class="fab fa-github"></i> luca-os</div>
                     </div>
-                    <div class="project-content">
-                        <h3>Website tin tức công nghệ</h3>
-                        <p>Xây dựng website tin tức công nghệ với hệ thống quản lý nội dung và giao diện người dùng hiện đại, tối ưu SEO.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Vue.js</span>
-                            <span class="project-tag">Express</span>
-                            <span class="project-tag">MySQL</span>
+                    <div class="project-body">
+                        <h3>LUCA OS — AI Agentic Đa Mô Hình & Second Brain</h3>
+                        <p>
+                            Nền tảng AI agentic thông minh có khả năng linh hoạt hoán đổi bộ não xử lý (Claude Code, ChatGPT/Codex, Gemini, OpenRouter) kết hợp hệ thống lưu trữ tri thức thứ hai (Second Brain) quản lý dữ liệu cá nhân hóa.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span>Python</span>
+                            <span>AI Agent</span>
+                            <span>Multi-LLM</span>
+                            <span>Knowledge Base</span>
                         </div>
-                        <a href="#" class="btn">Xem chi tiết</a>
+                        <div class="project-links">
+                            <a href="https://github.com/TIPC1110/luca-os" target="_blank" rel="noopener noreferrer" class="proj-btn">
+                                <i class="fab fa-github"></i> Xem Mã Nguồn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: ctdocloud -->
+                <div class="project-card reveal">
+                    <div class="card-glass-header">
+                        <div class="project-badge"><i class="fas fa-cloud"></i> Desktop Cloud App</div>
+                        <div class="project-stars"><i class="fab fa-github"></i> ctdocloud</div>
+                    </div>
+                    <div class="project-body">
+                        <h3>ctdocloud — Desktop App Quản Lý Lưu Trữ Đám Mây</h3>
+                        <p>
+                            Ứng dụng desktop cao cấp giúp điều phối và quản lý toàn diện các dịch vụ lưu trữ đám mây, tích hợp trực tiếp công cụ mã nguồn mở <strong>Rclone</strong> với giao diện trực quan, tốc độ truyền tải cao và bảo mật dữ liệu.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span>Rust</span>
+                            <span>Desktop GUI</span>
+                            <span>Rclone Core</span>
+                            <span>Cloud Sync</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/TIPC1110/ctdocloud" target="_blank" rel="noopener noreferrer" class="proj-btn">
+                                <i class="fab fa-github"></i> Xem Mã Nguồn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: CTDOSHub -->
+                <div class="project-card reveal">
+                    <div class="card-glass-header">
+                        <div class="project-badge"><i class="fas fa-bolt"></i> High-Speed Backend</div>
+                        <div class="project-stars"><i class="fab fa-github"></i> ctdoshub</div>
+                    </div>
+                    <div class="project-body">
+                        <h3>CTDOSHub — Backend API Nền Tảng Năng Suất Số</h3>
+                        <p>
+                            Hệ thống backend API hiệu năng cao phục vụ hệ sinh thái CTDOSHub, viết bằng Hono và TypeScript. Tích hợp xác thực Supabase Auth, phân quyền người dùng RBAC chặt chẽ và cơ sở dữ liệu thời gian thực.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span>TypeScript</span>
+                            <span>Hono</span>
+                            <span>Supabase</span>
+                            <span>JWT Auth</span>
+                            <span>RBAC</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/TIPC1110/ctdoshub" target="_blank" rel="noopener noreferrer" class="proj-btn">
+                                <i class="fab fa-github"></i> Xem Mã Nguồn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Gemini Chatbot -->
+                <div class="project-card reveal">
+                    <div class="card-glass-header">
+                        <div class="project-badge"><i class="fab fa-telegram"></i> AI Assistant Bot</div>
+                        <div class="project-stars"><i class="fab fa-github"></i> tg-gemini-bot</div>
+                    </div>
+                    <div class="project-body">
+                        <h3>tg-gemini-bot — Trợ Lý Trò Chuyện Google Gemini</h3>
+                        <p>
+                            Hệ thống bot thông minh tích hợp trí tuệ nhân tạo Google Gemini API đa chức năng trên Telegram. Hỗ trợ đối thoại ngữ cảnh, xử lý văn bản nhanh chóng và dễ dàng triển khai không máy chủ trên Vercel.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span>Python</span>
+                            <span>Gemini API</span>
+                            <span>Telegram Bot</span>
+                            <span>Serverless</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/TIPC1110/tg-gemini-bot" target="_blank" rel="noopener noreferrer" class="proj-btn">
+                                <i class="fab fa-github"></i> Xem Mã Nguồn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ecosystem Section -->
+        <section class="section" id="ecosystem">
+            <div class="section-header reveal">
+                <span class="section-tag">TỔ CHỨC & HỆ SINH THÁI</span>
+                <h2 class="section-title">Hệ Sinh Thái ctdoteam</h2>
+                <div class="title-bar"></div>
+            </div>
+
+            <div class="ecosystem-banner reveal">
+                <div class="banner-content">
+                    <h3>Xây Dựng Các Giải Pháp Công Nghệ Toàn Diện</h3>
+                    <p>
+                        <strong>ctdoteam</strong> là không gian quy tụ các dự án nghiên cứu, tiện ích cá nhân hóa và công cụ phần mềm mã nguồn mở của mình. Từ việc số hóa điều hành giao thông công cộng, tiện ích hệ điều hành máy tính đến các mô hình AI Agents tự động hóa.
+                    </p>
+                    <div class="ecosystem-tags">
+                        <span class="eco-item"><i class="fas fa-check-circle"></i> Ứng Dụng Web Thời Gian Thực</span>
+                        <span class="eco-item"><i class="fas fa-check-circle"></i> Tiện Ích Native macOS & Rust Desktop</span>
+                        <span class="eco-item"><i class="fas fa-check-circle"></i> Kiến Trúc AI Agentic & Second Brain</span>
+                        <span class="eco-item"><i class="fas fa-check-circle"></i> Nền Tảng Lưu Trữ & Điện Toán Đám Mây</span>
                     </div>
                 </div>
             </div>
@@ -226,82 +661,121 @@
 
         <!-- Contact Section -->
         <section class="section" id="contact">
-            <h2 class="section-title reveal">Liên Hệ</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <div class="contact-item reveal">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
+            <div class="section-header reveal">
+                <span class="section-tag">KẾT NỐI & HỢP TÁC</span>
+                <h2 class="section-title">Liên Hệ Với Mình</h2>
+                <div class="title-bar"></div>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info-cards reveal">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope-open-text"></i>
                         </div>
-                        <div class="contact-text">
-                            <h4>Địa chỉ</h4>
-                            <p>Hà Nội (Hiện Tại) - Bắc Ninh</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item reveal">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h4>Điện thoại</h4>
-                            <p>Đã ẩn</p>
+                        <div class="info-details">
+                            <h4>Email Trực Tiếp</h4>
+                            <a href="mailto:dothanhcong1110@outlook.com" class="info-link">dothanhcong1110@outlook.com</a>
                         </div>
                     </div>
-                    
-                    <div class="contact-item reveal">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fab fa-facebook-messenger"></i>
                         </div>
-                        <div class="contact-text">
-                            <h4>Email</h4>
-                            <p>dothanhcong1110@outlook.com</p>
+                        <div class="info-details">
+                            <h4>Facebook Cá Nhân</h4>
+                            <a href="https://www.facebook.com/do.x.nguyen.2025/" target="_blank" rel="noopener noreferrer" class="info-link">Do Nguyen (facebook.com)</a>
                         </div>
                     </div>
-                    
-                    <div class="contact-item reveal">
-                        <div class="contact-icon">
-                            <i class="fas fa-clock"></i>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fab fa-github"></i>
                         </div>
-                        <div class="contact-text">
-                            <h4>Thời gian làm việc</h4>
-                            <p>12h tối - 8h sáng</p>
+                        <div class="info-details">
+                            <h4>GitHub Profile</h4>
+                            <a href="https://github.com/TIPC1110" target="_blank" rel="noopener noreferrer" class="info-link">github.com/TIPC1110 (60+ repos)</a>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-location-dot"></i>
+                        </div>
+                        <div class="info-details">
+                            <h4>Địa Điểm & Chế Độ Làm Việc</h4>
+                            <p>Hà Nội & Bắc Ninh, Việt Nam</p>
+                            <span class="work-status"><i class="fas fa-circle-check"></i> Sẵn sàng: Full-Time / Remote / Hợp tác dự án</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="contact-form reveal">
-                    <h3>Gửi tin nhắn cho tôi</h3>
+
+                <div class="contact-form-wrapper reveal">
+                    <h3>Gửi Tin Nhắn Cho Mình</h3>
+                    <p class="form-subtitle">Bạn có ý tưởng dự án hoặc muốn trao đổi công nghệ? Đừng ngần ngại để lại lời nhắn nhé!</p>
+                    
                     <form action="https://formspree.io/f/xrbkjvbr" method="POST" id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Họ và tên</label>
-                            <input type="text" id="name" name="name" class="form-control" placeholder="Nhập họ tên của bạn" required>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Họ và tên <span class="req">*</span></label>
+                                <input type="text" id="name" name="name" class="form-control" placeholder="Nguyễn Văn A" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email của bạn <span class="req">*</span></label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="name@example.com" required>
+                            </div>
                         </div>
+
                         <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" class="form-control" placeholder="Nhập email của bạn" required>
+                            <label for="subject">Chủ đề <span class="req">*</span></label>
+                            <input type="text" id="subject" name="subject" class="form-control" placeholder="Hợp tác phát triển dự án / Trao đổi công việc" required>
                         </div>
+
                         <div class="form-group">
-                            <label for="subject">Chủ đề</label>
-                            <input type="text" id="subject" name="subject" class="form-control" placeholder="Nhập chủ đề" required>
+                            <label for="message">Nội dung tin nhắn <span class="req">*</span></label>
+                            <textarea id="message" name="message" class="form-control" rows="5" placeholder="Chia sẻ ý tưởng hoặc nội dung bạn cần trao đổi..." required></textarea>
                         </div>
-                        <div class="form-group">
-                            <label for="message">Nội dung</label>
-                            <textarea id="message" name="message" class="form-control" placeholder="Nhập nội dung tin nhắn" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">Gửi tin nhắn</button>
+
+                        <button type="submit" class="btn btn-submit" id="submitBtn">
+                            <span>Gửi tin nhắn</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
                     </form>
+                    
+                    <div id="formStatus" class="form-status"></div>
                 </div>
             </div>
         </section>
 
         <!-- Footer -->
         <footer>
-            <div class="footer-logo">CTDOPDN</div>
-            <p class="copyright">© 2025 Do Nguyen. Tất cả quyền được bảo lưu.</p>
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <span class="logo-accent">&lt;</span>CTDO<span class="logo-accent">/&gt;</span>
+                    <span>PDN</span>
+                </div>
+                <p class="footer-quote">
+                    "Code is poetry, and every commit tells a story."
+                </p>
+                <div class="footer-socials">
+                    <a href="https://github.com/TIPC1110" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/do.x.nguyen.2025/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="mailto:dothanhcong1110@outlook.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+                <div class="footer-copy">
+                    &copy; 2026 Do Nguyen (TIPC1110). Developed with passion & precision for ctdoteam.
+                </div>
+            </div>
         </footer>
     </div>
 
+    <!-- Scroll To Top Button -->
+    <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Cuộn lên đầu trang">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
     <script src="assets/js/main.js"></script>
 </body>
 </html>
