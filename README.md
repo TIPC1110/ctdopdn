@@ -24,7 +24,7 @@ Trang web portfolio cá nhân chính thức của **Do Nguyen (TIPC1110)** — F
 - 📜 **Hồ Sơ Chứng Chỉ Chuyên Nghiệp**: Tổng hợp đầy đủ các chứng chỉ Coursera (Kỹ thuật phần mềm UML/Testing/Design, Web Design for Everybody Capstone), Amazon Generative AI, DeepLearning.AI và FPT Talent Assessment.
 - 🚀 **Showcase Dự Án Thực Chiến**: Trưng bày chi tiết các dự án trọng tâm:
   - 🚌 **CTDOBus (`ctdomap`)**: Bản đồ & điều hành xe buýt Hà Nội trực tiếp qua SSE & giải mã AES-256-CBC.
-  - 📸 **ctdoshot**: Tiện ích macOS menu-bar chụp màn hình native viết bằng Swift 5.9.
+  - 🔑 **ctdoshopkey**: Hệ thống dịch vụ backend viết bằng PHP & MySQL chuyên quản lý bản quyền số & API Keys.
   - 🧠 **LUCA OS**: AI Agentic Brain đa mô hình & Second Brain.
   - ☁️ **ctdocloud**: Desktop app quản lý cloud storage tích hợp Rclone (Rust).
   - ⚡ **CTDOSHub**: Nền tảng backend API với Hono & Supabase.
