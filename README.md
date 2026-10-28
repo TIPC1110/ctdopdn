@@ -11,7 +11,7 @@
 
 <br/>
 
-Trang web portfolio cá nhân chính thức của **Do Nguyen (TIPC1110)** — Full Stack & PHP Backend Engineer, Founder & Core Developer tại **ctdoteam**.
+Trang web portfolio cá nhân chính thức của **Do Nguyen (TIPC1110)** — Sinh viên Công nghệ thông tin (nhập học 2024, chuyên ngành từ giữa 2025), Full Stack & PHP Backend Developer, Founder tại **ctdoteam**.
 
 Thiết kế theo phong cách **Minimal Swiss / Obsidian Dark**: nền đen cao tương phản, đường viền mảnh, không gradient rực rỡ, không hiệu ứng sáng thừa. Typography chuẩn quốc tế với `Plus Jakarta Sans` & `JetBrains Mono`.
 
