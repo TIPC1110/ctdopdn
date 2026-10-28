@@ -1,20 +1,25 @@
-// ==========================================================================
-// Do Nguyen (TIPC1110) - Portfolio Core JavaScript
-// ==========================================================================
+/* ==========================================================================
+   Do Nguyen Portfolio — Minimal, purposeful interactions only
+   No flashy animations, no scroll-triggered reveals, no gimmicks
+   ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Mobile Menu Toggle
     const menuToggle = document.getElementById('menuToggle');
     const navMenu = document.getElementById('navMenu');
     const navLinks = document.querySelectorAll('.nav-link');
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+    const navbar = document.getElementById('navbar');
+    const contactForm = document.getElementById('contactForm');
+    const formStatus = document.getElementById('formStatus');
+    const submitBtn = document.getElementById('submitBtn');
 
+    /* --- Mobile menu toggle --- */
     if (menuToggle && navMenu) {
         menuToggle.addEventListener('click', () => {
             navMenu.classList.toggle('open');
             menuToggle.classList.toggle('active');
         });
 
-        // Close menu on link click
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
                 navMenu.classList.remove('open');
@@ -23,134 +28,77 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 2. Sticky Navbar & Scroll Spy
-    const navbar = document.getElementById('navbar');
+    /* --- Scroll spy + navbar shrink --- */
     const sections = document.querySelectorAll('section[id]');
+    const updateNav = () => {
+        const scrollY = window.scrollY;
 
-    function handleScroll() {
-        const scrollY = window.pageYOffset;
-
-        // Sticky Navbar effect
         if (navbar) {
-            if (scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
+            if (scrollY > 30) navbar.classList.add('scrolled');
+            else navbar.classList.remove('scrolled');
         }
 
-        // Scroll Spy active navigation link
-        sections.forEach(current => {
-            const sectionHeight = current.offsetHeight;
-            const sectionTop = current.offsetTop - 120;
-            const sectionId = current.getAttribute('id');
-            const targetLink = document.querySelector(`.nav-link[href*="${sectionId}"]`);
+        if (scrollTopBtn) {
+            if (scrollY > 400) scrollTopBtn.classList.add('visible');
+            else scrollTopBtn.classList.remove('visible');
+        }
 
-            if (targetLink) {
-                if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-                    targetLink.classList.add('active');
-                } else {
-                    targetLink.classList.remove('active');
-                }
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 120;
+            if (scrollY >= sectionTop) {
+                current = section.getAttribute('id');
             }
         });
 
-        // Scroll to Top Button Visibility
-        const scrollTopBtn = document.getElementById('scrollTopBtn');
-        if (scrollTopBtn) {
-            if (scrollY > 400) {
-                scrollTopBtn.classList.add('visible');
-            } else {
-                scrollTopBtn.classList.remove('visible');
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + current) {
+                link.classList.add('active');
             }
-        }
+        });
+    };
 
-        // Reveal elements on scroll
-        revealElements();
-    }
+    window.addEventListener('scroll', updateNav, { passive: true });
+    updateNav();
 
-    window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Trigger once on load
-
-    // 3. Scroll To Top Action
-    const scrollTopBtn = document.getElementById('scrollTopBtn');
+    /* --- Scroll to top --- */
     if (scrollTopBtn) {
         scrollTopBtn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     }
 
-    // 4. Reveal on Scroll Animation
-    function revealElements() {
-        const reveals = document.querySelectorAll('.reveal');
-        const windowHeight = window.innerHeight;
-        const revealPoint = 120;
-
-        reveals.forEach(el => {
-            const revealTop = el.getBoundingClientRect().top;
-            if (revealTop < windowHeight - revealPoint) {
-                el.classList.add('active');
-            }
-        });
-    }
-    revealElements();
-
-    // 5. Formspree AJAX Submission
-    const contactForm = document.getElementById('contactForm');
-    const formStatus = document.getElementById('formStatus');
-    const submitBtn = document.getElementById('submitBtn');
-
-    if (contactForm && formStatus) {
+    /* --- Contact form (AJAX via Formspree) --- */
+    if (contactForm) {
         contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
-
-            const originalBtnHTML = submitBtn ? submitBtn.innerHTML : '';
-            if (submitBtn) {
-                submitBtn.disabled = true;
-                submitBtn.innerHTML = '<span>Đang gửi tin nhắn...</span> <i class="fas fa-spinner fa-spin"></i>';
-            }
-
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Đang gửi...';
+            submitBtn.disabled = true;
             formStatus.className = 'form-status';
             formStatus.style.display = 'none';
 
-            const formData = new FormData(contactForm);
-
             try {
                 const response = await fetch(contactForm.action, {
-                    method: contactForm.method,
-                    body: formData,
-                    headers: {
-                        'Accept': 'application/json'
-                    }
+                    method: 'POST',
+                    body: new FormData(contactForm),
+                    headers: { 'Accept': 'application/json' }
                 });
 
                 if (response.ok) {
-                    formStatus.textContent = '🎉 Cảm ơn bạn! Tin nhắn đã được gửi thành công. Mình sẽ phản hồi sớm nhất!';
                     formStatus.className = 'form-status success';
-                    formStatus.style.display = 'block';
+                    formStatus.innerHTML = '<i class="fas fa-check-circle"></i> Tin nhắn đã được gửi thành công! Mình sẽ liên hệ lại sớm.';
                     contactForm.reset();
                 } else {
-                    const data = await response.json();
-                    let errMsg = 'Đã có lỗi xảy ra khi gửi tin nhắn.';
-                    if (data && data.errors) {
-                        errMsg = data.errors.map(error => error.message).join(', ');
-                    }
-                    formStatus.textContent = `⚠️ ${errMsg} Vui lòng thử lại hoặc gửi trực tiếp qua email.`;
-                    formStatus.className = 'form-status error';
-                    formStatus.style.display = 'block';
+                    throw new Error('Failed to send');
                 }
-            } catch (err) {
-                formStatus.textContent = '⚠️ Không thể kết nối đến máy chủ. Vui lòng kiểm tra đường truyền mạng hoặc liên hệ qua email!';
+            } catch (error) {
                 formStatus.className = 'form-status error';
-                formStatus.style.display = 'block';
+                formStatus.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Gửi thất bại. Vui lòng gửi email trực tiếp tới dothanhcong1110@outlook.com';
             } finally {
-                if (submitBtn) {
-                    submitBtn.disabled = false;
-                    submitBtn.innerHTML = originalBtnHTML;
-                }
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
             }
         });
     }
