@@ -11,7 +11,7 @@
 
 <br/>
 
-Trang web portfolio cá nhân chính thức của **Do Nguyen (TIPC1110)** — Sinh viên Công nghệ thông tin (nhập học 2024, chuyên ngành từ giữa 2025), Full Stack & PHP Backend Developer, Founder tại **ctdoteam**.
+Trang web portfolio cá nhân chính thức của **ctdo (TIPC1110)** — Sinh viên Công nghệ thông tin (nhập học 2024, chuyên ngành từ giữa 2025), Full Stack & PHP Backend Developer, Founder tại **ctdoteam**.
 
 Thiết kế theo phong cách **Minimal Swiss / Obsidian Dark**: nền đen cao tương phản, đường viền mảnh, không gradient rực rỡ, không hiệu ứng sáng thừa. Typography chuẩn quốc tế với `Plus Jakarta Sans` & `JetBrains Mono`.
 
@@ -73,9 +73,9 @@ ctdopdn/
 
 ## 📝 License
 
-Dự án được xây dựng và duy trì bởi **Do Nguyen (TIPC1110)**. Mã nguồn mở cho mục đích học tập và tham khảo.
+Dự án được xây dựng và duy trì bởi **ctdo (TIPC1110)**. Mã nguồn mở cho mục đích học tập và tham khảo.
 
 ---
 <div align="center">
-  <p>Made with 💻 by <a href="https://github.com/TIPC1110">Do Nguyen</a></p>
+  <p>Made with 💻 by <a href="https://github.com/TIPC1110">ctdo</a></p>
 </div>

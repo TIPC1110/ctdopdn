@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             } catch (error) {
                 formStatus.className = 'form-status error';
-                formStatus.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Gửi thất bại. Vui lòng gửi email trực tiếp tới dothanhcong1110@outlook.com';
+                formStatus.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Gửi thất bại. Vui lòng liên hệ qua nhóm Facebook ctdo.net';
             } finally {
                 submitBtn.innerHTML = originalText;
                 submitBtn.disabled = false;
